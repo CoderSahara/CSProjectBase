@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CSProjectBase_Example' do
+  pod 'CSProjectBase', :path => '../'
+
+  target 'CSProjectBase_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
