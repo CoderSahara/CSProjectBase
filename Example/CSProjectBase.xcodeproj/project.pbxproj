@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C88F7EFE8F37D3557DA0D34 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0C88F7EFE8F37D3557DA0D34 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		12D0F932F6940215C0D1701A /* Pods-CSProjectBase_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSProjectBase_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSProjectBase_Tests/Pods-CSProjectBase_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E2F7422EBE4BDB7AF176C69 /* Pods-CSProjectBase_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSProjectBase_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSProjectBase_Example/Pods-CSProjectBase_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2EB01658975C4DE1476F57CC /* Pods_CSProjectBase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSProjectBase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +65,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86B01F09EF331356A760F31F /* Pods_CSProjectBase_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSProjectBase_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CA873881F8B06398730654EB /* CSProjectBase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CSProjectBase.podspec; path = ../CSProjectBase.podspec; sourceTree = "<group>"; };
-		FA7F124418D94E2B9060C46C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CA873881F8B06398730654EB /* CSProjectBase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CSProjectBase.podspec; path = ../CSProjectBase.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FA7F124418D94E2B9060C46C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,11 +301,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CSProjectBase_Example/Pods-CSProjectBase_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/CSProjectBase/CSProjectBase.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSProjectBase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

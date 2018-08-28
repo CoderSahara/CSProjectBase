@@ -1,0 +1,30 @@
+{
+  "name": "CSProjectBase",
+  "version": "0.1.0",
+  "summary": "CSProjectBase.",
+  "description": "框架基础组件.",
+  "homepage": "https://github.com/CoderSahara/CSProjectBase",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "CoderSahara": "sahara@gitlab.com"
+  },
+  "source": {
+    "git": "https://github.com/CoderSahara/CSProjectBase.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CSProjectBase/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "SDWebImage": [
+
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module Pods_CSProjectBase_Example {
+  umbrella header "Pods-CSProjectBase_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

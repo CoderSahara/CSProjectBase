@@ -1,0 +1,6 @@
+framework module CSProjectBase {
+  umbrella header "CSProjectBase-umbrella.h"
+
+  export *
+  module * { export * }
+}
